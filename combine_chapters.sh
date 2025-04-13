@@ -9,7 +9,7 @@ if [ -f "$output_file" ]; then
 fi
 
 # 各章を順番に結合
-echo "# 日本語ポピュラー音楽における作詞創作過程の研究" > "$output_file"
+cat "博論草稿1-3.md" >> "$output_file"
 echo "" >> "$output_file"
 
 # 第4章を追加
@@ -22,5 +22,8 @@ echo "" >> "$output_file"
 
 # 第6章を追加
 cat "博論草稿6以降.md" >> "$output_file"
+cat "博論草稿7書誌情報.md" >> "$output_file"
+echo "" >> "$output_file"
+
 
 echo "論文の結合が完了しました。出力ファイル: $output_file" 
